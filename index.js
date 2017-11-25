@@ -1,6 +1,8 @@
 'use strict';
 var fs = require('fs');
 
+console.log("Here");
+
  exports.get = function(event, context) {
    console.log(event);
    console.log(context);
