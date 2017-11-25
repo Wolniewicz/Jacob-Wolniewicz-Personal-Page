@@ -23,3 +23,9 @@ Resources:
           Properties:
             Path: /
             Method: get
+        # Get requests which come with a specific file name. I.e. https://www.wolniewicz.com/index.html
+        GetTopLevelPage:
+          Type: Api
+          Properties:
+            Path: /{file}
+            Method: get
