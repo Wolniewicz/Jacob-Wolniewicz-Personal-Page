@@ -33,7 +33,7 @@
           <a class="nav-link active" href="#" id="meList" onclick="navigateLists('me')">Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" id="assessibilityList" onclick="navigateLists('assessibility')">Assessibility</a>
+          <a class="nav-link" href="#" id="accessibilityList" onclick="navigateLists('accessibility')">Accessibility</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" id="outdoorList" onclick="navigateLists('outdoor')">Outdoor</a>
@@ -63,8 +63,8 @@
 
   </div>
 
-  <div class="container my-4" id="assessibilityDiv" style="display:none">
-    <h1>Assessiblity info coming soon!</h1>
+  <div class="container my-4" id="accessibilityDiv" style="display:none">
+    <h1>Accessibility info coming soon!</h1>
   </div>
 
   <div class="container my-4" id="outdoorDiv" style="display:none">
@@ -79,13 +79,13 @@
   function navigateLists(selectedList) {
     var meDiv = document.getElementById('meDiv');
     var outdoorDiv = document.getElementById('outdoorDiv');
-    var assessibilityDiv = document.getElementById('assessibilityDiv');
+    var aaccessibilityDiv = document.getElementById('accessibilityDiv');
     meDiv.style.display = "none";
     outdoorDiv.style.display = "none";
-    assessibilityDiv.style.display = "none";
+    accessibilityDiv.style.display = "none";
 
     $(meList).removeClass('active');
-    $(assessibilityList).removeClass('active');
+    $(accessibilityList).removeClass('active');
     $(outdoorList).removeClass('active');
 
     var x = document.getElementById(selectedList+'Div');
