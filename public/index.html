@@ -1,58 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- These meta tags come first. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <!-- These meta tags come first. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Jacob's Personal Page</title>
+  <title>Jacob's Personal Page</title>
 
-    <!-- Include the CSS -->
-    <link href="assets/css/toolkit.min.css" rel="stylesheet">
+  <!-- Include the CSS -->
+  <link href="assets/css/toolkit.min.css" rel="stylesheet">
 
-  </head>
-
-
+</head>
 
 
-  <body>
 
 
-      <div class="profile-header text-center" style="background-image: url(assets/img/ColoradoDunes.jpg); ">
-      <div class="container-fluid">
-        <div class="container-inner">
-          <img class="rounded-circle media-object" src="assets/img/JacobAvatar.png">
-          <h3 class="profile-header-user">Jacob Wolniewicz</h3>
-          <p class="profile-header-bio">The unexamined life is not worth living ~Socrates</p>
-        </div>
+<body>
+
+
+  <div class="profile-header text-center" style="background-image: url(assets/img/ColoradoDunes.jpg); ">
+    <div class="container-fluid">
+      <div class="container-inner">
+        <img class="rounded-circle media-object" src="assets/img/JacobAvatar.png">
+        <h3 class="profile-header-user">Jacob Wolniewicz</h3>
+        <p class="profile-header-bio">The unexamined life is not worth living ~Socrates</p>
       </div>
-      <nav class="profile-header-nav">
-        <ul class="nav nav-tabs justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Assessibility</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Outdoor</a>
-          </li>
-        </ul>
-      </nav>
     </div>
+    <nav class="profile-header-nav">
+      <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#" id="meList" onclick="navigateLists('me')">Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="assessibilityList" onclick="navigateLists('assessibility')">Assessibility</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="outdoorList" onclick="navigateLists('outdoor')">Outdoor</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
-    <div class="container my-4">
+  <div class="container my-4" id="meDiv">
     <h1>Hello, my name is Jacob!</h1>
 
-    <p>This page is in development and likely to change often.</p>
+    <p>
+      This page is in development and likely to change often.
+      In the mean time if you want to see my resume please see it <a href="resume.html">here.</a>
+    </p>
 
-    <p>In the mean time if you want to see my resume please see it <a href="resume.html">here.</a></p>
+    <p>
+      I am a software engineer at Microsoft currently working on the data team on Visual Studio.
+      In my free time I go outdoors quite often and am the current co-chair of the Seattle Mountaineers
+      climbing committee.
+    </p>
+
+    <p>
+      I spend a lot of time thinking about accessibility around software and how going forward it
+      will improve the lives of people with disabilities and aging generations.
+    </p>
 
   </div>
 
-    <!-- Include jQuery (required) and the JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="assets/js/toolkit.min.js"></script>
-  </body>
+  <div class="container my-4" id="assessibilityDiv" style="display:none">
+    <h1>Assessiblity info coming soon!</h1>
+  </div>
+
+  <div class="container my-4" id="outdoorDiv" style="display:none">
+    <h1>Outdoor coming soon!</h1>
+  </div>
+
+  <!-- Include jQuery (required) and the JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="assets/js/toolkit.min.js"></script>
+
+  <script>
+  function navigateLists(selectedList) {
+    var meDiv = document.getElementById('meDiv');
+    var outdoorDiv = document.getElementById('outdoorDiv');
+    var assessibilityDiv = document.getElementById('assessibilityDiv');
+    meDiv.style.display = "none";
+    outdoorDiv.style.display = "none";
+    assessibilityDiv.style.display = "none";
+
+    $(meList).removeClass('active');
+    $(assessibilityList).removeClass('active');
+    $(outdoorList).removeClass('active');
+
+    var x = document.getElementById(selectedList+'Div');
+    x.style.display = "block";
+
+    var listId = document.getElementById(selectedList+'List');
+    console.log(listId);
+    listId.className += " active";
+
+  }
+  </script>
+</body>
 </html>
