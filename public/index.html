@@ -38,12 +38,15 @@
         <li class="nav-item">
           <a class="nav-link" href="#" id="outdoorList" onclick="navigateLists('outdoor')">Peakbagging</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="tripReportsList" onclick="navigateLists('outdoor')">Peakbagging</a>
+        </li>
       </ul>
     </nav>
   </div>
 
   <div class="container my-4" id="meDiv">
-    <h1>Hi, my name is Jacob Wolniewicz!</h1>
+    <h3>Hi, my name is Jacob Wolniewicz!</h3>
 
     <p>
         I'm 26 years old.
@@ -66,7 +69,7 @@
   </div>
 
   <div class="container my-4" id="accessibilityDiv" style="display:none">
-    <h1>I sit and think about data and how humans interact with computers often.</h1>
+    <p>I sit and think about data and how humans interact with computers often.</p>
 
     <p>
       Every now and then I publish a blog post about recent interactions or thoughts I've had.
@@ -101,10 +104,14 @@
 
     <p>
       I only really started paying attention to my lists once I was climbing.
-      Peakbagger: https://peakbagger.com/climber/ClimbListC.aspx?cid=10828&sort=AscentDateD&u=ft&j=-1&y=9999
-      Mountainproject: https://www.mountainproject.com/user/111847141/jacob-wolniewicz
+      Peakbagger: https://peakbagger.com/climber/ClimbListC.aspx?cid=10828&sort=AscentDateD&u=ft&j=-1&y=9999 <br/>
+      Mountainproject: https://www.mountainproject.com/user/111847141/jacob-wolniewicz <br/>
       Mountaineers: https://www.mountaineers.org/members/jacob-wolniewicz
     </p>
+  </div>
+
+  <div class="container my-4" id="tripReportsDiv" style="display:none">
+    I try to get out every weekend but will post trip reports of recent summits here.
   </div>
 
   <!-- Include jQuery (required) and the JS -->
@@ -115,14 +122,17 @@
   function navigateLists(selectedList) {
     var meDiv = document.getElementById('meDiv');
     var outdoorDiv = document.getElementById('outdoorDiv');
-    var aaccessibilityDiv = document.getElementById('accessibilityDiv');
+    var accessibilityDiv = document.getElementById('accessibilityDiv');
+    var tripReportsDiv = document.getElementById('tripReportsDiv');
     meDiv.style.display = "none";
     outdoorDiv.style.display = "none";
     accessibilityDiv.style.display = "none";
+    tripReportsDiv.style.display = "none";
 
     $(meList).removeClass('active');
     $(accessibilityList).removeClass('active');
     $(outdoorList).removeClass('active');
+    $(tripReportsList).removeClass('active');
 
     var x = document.getElementById(selectedList+'Div');
     x.style.display = "block";
