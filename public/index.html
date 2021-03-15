@@ -112,16 +112,13 @@
     var meDiv = document.getElementById('meDiv');
     var outdoorDiv = document.getElementById('outdoorDiv');
     var accessibilityDiv = document.getElementById('accessibilityDiv');
-    var tripReportsDiv = document.getElementById('tripReportsDiv');
     meDiv.style.display = "none";
     outdoorDiv.style.display = "none";
     accessibilityDiv.style.display = "none";
-    tripReportsDiv.style.display = "none";
 
     $(meList).removeClass('active');
     $(accessibilityList).removeClass('active');
     $(outdoorList).removeClass('active');
-    $(tripReportsList).removeClass('active');
 
     var x = document.getElementById(selectedList+'Div');
     x.style.display = "block";
