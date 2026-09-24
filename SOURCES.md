@@ -1,6 +1,6 @@
 # Content sources
 
-User confirmed: director of engineering, leader and mentor, former climbing chair, still teaching climbing, West Highland Way completion in 2025, longstanding Peakbagger account.
+User confirmed: director of software engineering, Microsoft career experience, leader and mentor, former climbing chair, still teaching climbing, West Highland Way completion in 2025, longstanding Peakbagger account.
 
 - https://www.linkedin.com/in/jacob-wolniewicz — Uplight, CU Boulder/HCI, Mountaineers and Colorado Mountain Club volunteering.
 - https://www.linkedin.com/in/navajabburi — Jacob's signed recommendation identifies his BP technical leadership.
