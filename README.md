@@ -1,42 +1,25 @@
-Welcome to the AWS CodeStar sample web application
-==================================================
+# Jacob Wolniewicz — personal website
 
-This sample code helps get you started with a simple Node.js web service deployed by AWS CloudFormation to AWS Lambda and Amazon API Gateway.
+Live site: https://jacob.wolniewicz.com
 
-What's Here
------------
+A single-page site about engineering leadership, mentorship, climbing, and the outdoors.
 
-This sample includes:
+## Files
 
-* README.md - this file
-* buildspec.yml - this file is used by AWS CodeBuild to package your
-  application for deployment to AWS Lambda
-* index.js - this file contains the sample Node.js code for the web service
-* template.yml - this file contains the Serverless Application Model (SAM) used
-  by AWS Cloudformation to deploy your application to AWS Lambda and Amazon API
-  Gateway.
+- `index.html`: page content and links
+- `style.css`: typography, layout, and responsive styles
+- `alpine-line-art.png`: original mountain illustration
+- `SOURCES.md`: public sources and user-confirmed biographical details
 
+## Preview
 
-What Do I Do Next?
-------------------
+No build or package installation is required. Open `index.html` in a browser, or run `python -m http.server 8000` and visit http://localhost:8000.
 
-If you have checked out a local copy of your repository you can start making
-changes to the sample code.  We suggest making a small change to index.js first,
-so you can see how changes pushed to your project's repository are automatically
-picked up by your project pipeline and deployed to AWS Lambda and Amazon API Gateway.
-(You can watch the pipeline progress on your AWS CodeStar project dashboard.)
-Once you've seen how that works, start developing your own code, and have fun!
+## Deployment
 
-Learn more about Serverless Application Model (SAM) and how it works here:
-https://github.com/awslabs/serverless-application-model/blob/master/HOWTO.md
+The live website is hosted with OpenAI Sites. GitHub stores the source and revision history; pushing here does not automatically publish to the live site. Publish updates through the existing Sites project, rather than creating a second site.
 
-AWS Lambda Developer Guide:
-http://docs.aws.amazon.com/lambda/latest/dg/deploying-lambda-apps.html
+The custom domain is managed through Squarespace DNS. Its `jacob` CNAME points to `custom-domains.chatgpt.site`. Domain verification and HTTPS were activated on September 24, 2026 UTC.
 
-Learn more about AWS CodeStar by reading the user guide, and post questions and
-comments about AWS CodeStar on our forum.
+Keep account credentials and local work files out of this repository.
 
-AWS CodeStar User Guide:
-http://docs.aws.amazon.com/codestar/latest/userguide/welcome.html
-
-AWS CodeStar Forum: https://forums.aws.amazon.com/forum.jspa?forumID=248
