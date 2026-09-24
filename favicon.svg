@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Jacob Wolniewicz mountain monogram">
+  <rect width="64" height="64" rx="13" fill="#1c4338"/>
+  <path d="M6 45 18 30l7 8L36 20l22 25" fill="none" stroke="#a54324" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m31 27 5-7 7 8" fill="none" stroke="#d06a48" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="32" y="47" fill="#fcfcf9" font-family="Arial, sans-serif" font-size="36" font-weight="700" text-anchor="middle">J</text>
+</svg>
