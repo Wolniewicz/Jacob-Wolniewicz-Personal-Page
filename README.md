@@ -2,13 +2,16 @@
 
 Live site: https://jacob.wolniewicz.com
 
-A single-page site about engineering leadership, mentorship, climbing, and the outdoors.
+A single-page site about engineering leadership, writing, mentorship, climbing, and the outdoors.
 
 ## Files
 
 - `index.html`: page content and links
 - `style.css`: typography, layout, and responsive styles
-- `alpine-line-art.png`: original mountain illustration
+- `favicon.svg`: mountain monogram used in browser tabs
+- `alpine-line-art-transparent.png`: transparent mountain illustration used in the hero
+- `alpine-line-art.png`: original mountain illustration source
+- `west-highland-way-loch-lomond.jpg`: race photograph used in the hero
 - `SOURCES.md`: public sources and user-confirmed biographical details
 
 ## Preview
