@@ -201,28 +201,28 @@ p { margin: 0 0 1.35rem; }
 .hero-visual {
   position: relative;
   min-height: 30rem;
+  padding: 2.5rem 0 2rem;
+  display: grid;
+  grid-template-rows: 10.5rem auto;
+  align-content: center;
+  row-gap: 1.6rem;
   align-self: stretch;
 }
 
 .mountain-art {
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  right: -2%;
-  width: 112%;
-  height: 22rem;
-  background: url("alpine-line-art-transparent.png") right center / contain no-repeat;
-  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 11%, #000 96%, transparent 100%);
-  mask-image: linear-gradient(to right, transparent 0, #000 11%, #000 96%, transparent 100%);
+  position: relative;
+  width: 116%;
+  height: 10.5rem;
+  margin-left: -16%;
+  background: url("alpine-line-art-transparent.png") right 54% / 112% auto no-repeat;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 14%, #000 96%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, #000 14%, #000 96%, transparent 100%);
 }
 
 .hero-photo {
-  position: absolute;
-  z-index: 1;
-  right: 2%;
-  bottom: 1.25rem;
-  width: min(22rem, 78%);
-  margin: 0;
+  position: relative;
+  width: min(23rem, 88%);
+  margin: 0 2% 0 auto;
   background: var(--forest);
   border: 0.55rem solid var(--paper);
   box-shadow: 0 0 0 1px var(--line);
@@ -470,9 +470,9 @@ footer {
   h1 { font-size: clamp(2.05rem, 8.6vw, 3.2rem); }
   h2 { font-size: clamp(2.35rem, 10vw, 3.3rem); }
   .hero-intro { font-size: 1.02rem; }
-  .hero-visual { min-height: 24rem; margin-top: 1.25rem; }
-  .mountain-art { top: 0; right: -4%; width: 105%; height: 15rem; }
-  .hero-photo { right: 4%; bottom: 0.8rem; width: min(19rem, 72%); }
+  .hero-visual { min-height: 0; margin-top: 1.5rem; padding: 0; grid-template-rows: 9rem auto; row-gap: 1.25rem; }
+  .mountain-art { width: 100%; height: 9rem; margin-left: 0; background-size: 108% auto; }
+  .hero-photo { width: min(22rem, 82%); margin: 0 auto; }
   .hero-photo img { height: 13.5rem; }
   .hero-foot { bottom: 1.15rem; }
   .hero-foot span:last-child { display: none; }
@@ -492,9 +492,9 @@ footer {
   nav { font-size: 0.77rem; }
   .hero { padding-top: 2.6rem; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 0.85rem; }
-  .hero-visual { min-height: 21rem; }
-  .mountain-art { height: 12.5rem; }
-  .hero-photo { width: 78%; border-width: 0.4rem; }
+  .hero-visual { grid-template-rows: 7.5rem auto; row-gap: 1rem; }
+  .mountain-art { height: 7.5rem; background-size: 116% auto; }
+  .hero-photo { width: 86%; border-width: 0.4rem; }
   .hero-photo img { height: 12rem; }
   .hero-photo figcaption { font-size: 0.59rem; }
   .writing-list article { grid-template-columns: 2.5rem 1fr; gap: 0.75rem; }
