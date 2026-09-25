@@ -211,9 +211,9 @@ p { margin: 0 0 1.35rem; }
 
 .mountain-art {
   position: relative;
-  width: 116%;
+  width: 104%;
   height: 10.5rem;
-  margin-left: -16%;
+  margin-left: 0;
   background: url("alpine-line-art-transparent.png") right 54% / 112% auto no-repeat;
   -webkit-mask-image: linear-gradient(to right, transparent 0, #000 14%, #000 96%, transparent 100%);
   mask-image: linear-gradient(to right, transparent 0, #000 14%, #000 96%, transparent 100%);
