@@ -4,7 +4,6 @@
   --text: #263c35;
   --muted: #4a5e56;
   --paper: #fcfcf9;
-  --paper-warm: #f5f1ea;
   --line: #c7d0c9;
   --rust: #a54324;
   --rust-dark: #85341c;
@@ -315,7 +314,6 @@ p { margin: 0 0 1.35rem; }
 }
 
 .career-path p:last-child,
-.writing-list article p,
 .contact p { color: var(--muted); }
 
 .item-kicker {
@@ -323,21 +321,6 @@ p { margin: 0 0 1.35rem; }
   color: var(--rust);
   font-size: 0.67rem;
 }
-
-.writing { background: var(--paper-warm); }
-.section-intro { max-width: 42rem; color: var(--muted); font-size: 1.08rem; }
-.writing-list { margin-top: 2.4rem; border-top: 1px solid #cfc5b8; }
-
-.writing-list article {
-  padding: 2rem 0;
-  display: grid;
-  grid-template-columns: 4.5rem 1fr;
-  gap: 1.25rem;
-  border-bottom: 1px solid #cfc5b8;
-}
-
-.writing-list article > div:last-child { max-width: 46rem; }
-.writing-number { color: var(--rust); font-family: Georgia, serif; font-size: 1.45rem; }
 
 .outside {
   color: var(--green-text);
@@ -439,7 +422,6 @@ footer {
   .hero-photo { width: 86%; border-width: 0.4rem; }
   .hero-photo img { height: 12rem; }
   .hero-photo figcaption { font-size: 0.59rem; }
-  .writing-list article { grid-template-columns: 2.5rem 1fr; gap: 0.75rem; }
   .outside-grid article { grid-template-columns: 2.2rem 1fr; }
   .race-stats { gap: 1.25rem; }
   .race-stats div { min-width: 0; text-align: left; }

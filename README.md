@@ -2,7 +2,7 @@
 
 Live site: https://jacob.wolniewicz.com
 
-A single-page site about engineering leadership, writing, mentorship, climbing, and the outdoors.
+A single-page site about engineering leadership, mentorship, climbing, and the outdoors.
 
 ## Files
 
