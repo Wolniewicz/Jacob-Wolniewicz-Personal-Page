@@ -315,7 +315,6 @@ p { margin: 0 0 1.35rem; }
 }
 
 .career-path p:last-child,
-.proof-card dd,
 .writing-list article p,
 .contact p { color: var(--muted); }
 
@@ -323,59 +322,6 @@ p { margin: 0 0 1.35rem; }
   margin-bottom: 0.85rem;
   color: var(--rust);
   font-size: 0.67rem;
-}
-
-.proof-heading {
-  margin-top: 4.6rem;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 2rem;
-  border-bottom: 1px solid var(--line);
-}
-
-.proof-heading .eyebrow { margin-bottom: 1.1rem; }
-
-.proof-heading h3 {
-  font-family: Georgia, serif;
-  font-style: italic;
-  font-weight: 400;
-}
-
-.proof-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.proof-card { padding: 2rem 2.2rem 0 0; }
-
-.proof-card + .proof-card {
-  padding-left: 2.2rem;
-  border-left: 1px solid var(--line);
-}
-
-dl { margin: 1.55rem 0; }
-
-dl div {
-  padding: 0.85rem 0;
-  display: grid;
-  grid-template-columns: 5.3rem 1fr;
-  gap: 0.9rem;
-  border-top: 1px solid var(--line);
-}
-
-dt {
-  color: var(--forest);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-}
-
-dd {
-  margin: 0;
-  font-size: 0.94rem;
-  line-height: 1.55;
 }
 
 .writing { background: var(--paper-warm); }
@@ -480,10 +426,6 @@ footer {
   .section-label { padding: 0; }
   .work-intro { grid-template-columns: 1fr; gap: 1.1rem; }
   .work-intro .lead { font-size: 1.3rem; }
-  .proof-heading { align-items: flex-start; flex-direction: column; gap: 0; }
-  .proof-grid { grid-template-columns: 1fr; }
-  .proof-card { padding: 1.8rem 0; }
-  .proof-card + .proof-card { padding-left: 0; border-left: 0; border-top: 1px solid var(--line); }
   .race-stats strong { font-size: 3.25rem; }
 }
 
@@ -498,7 +440,6 @@ footer {
   .hero-photo img { height: 12rem; }
   .hero-photo figcaption { font-size: 0.59rem; }
   .writing-list article { grid-template-columns: 2.5rem 1fr; gap: 0.75rem; }
-  dl div { grid-template-columns: 1fr; gap: 0.25rem; }
   .outside-grid article { grid-template-columns: 2.2rem 1fr; }
   .race-stats { gap: 1.25rem; }
   .race-stats div { min-width: 0; text-align: left; }
