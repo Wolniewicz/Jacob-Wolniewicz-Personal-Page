@@ -9,9 +9,10 @@ A single-page site about engineering leadership, mentorship, climbing, and the o
 - `index.html`: page content and links
 - `style.css`: typography, layout, and responsive styles
 - `favicon.svg`: mountain monogram used in browser tabs
-- `alpine-line-art-transparent.png`: transparent mountain illustration used in the hero
-- `alpine-line-art.png`: original mountain illustration source
-- `west-highland-way-loch-lomond.jpg`: race photograph used in the hero
+- `alpine-line-art-transparent.png`: transparent mountain illustration used in the hero (palette-optimized)
+- `west-highland-way-loch-lomond-{800,1200}.{webp,jpg}`: resized race photographs used in the hero
+- `og-image.jpg`: 1200×630 social preview image for link cards
+- `source/`: full-size original images, not referenced by the page and not needed when publishing
 - `SOURCES.md`: public sources and user-confirmed biographical details
 
 ## Preview
